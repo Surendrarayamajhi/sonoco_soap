@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "name": "sonoco soap",
+    "builds": [
+       { "src": "app.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+       { "src": "/(.*)", "dest": "/app.js" }
+    ],
+    "rewrites": [{ "src": "/(.*)", "destination": "/index.html" }]
+ }
+
+ 
